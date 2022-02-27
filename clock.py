@@ -81,10 +81,10 @@ while(1):
     if scroller == (-sizeofdate):
         scroller = 128
 
-    thetime = currentDT.strftime("%l"+(":" if tick else " ")+"%M")
+    thetime = currentDT.strftime("%l"+":"+"%M"+":"+"%S")
 
     thetime = str.lstrip(thetime)
-    sizeoftime = (50 - (len(thetime) * 18) / 2)
+    sizeoftime = (50 - (len(thetime) * 18) / 3.75)
 
     # theday = currentDT.strftime("%A")
     # sizeofday = (32 - (len(theday)* 7)/2)
@@ -97,7 +97,7 @@ while(1):
     graphics.DrawText(MyOffsetCanvas, fonts['10x20'], sizeoftime, 28, RED,
                       thetime)
 
-    graphics.DrawText(MyOffsetCanvas, fonts['8x13'], 60, 28, GREEN, pmam)
+    graphics.DrawText(MyOffsetCanvas, fonts['8x13'], 100, 28, GREEN, pmam)
 
     MyOffsetCanvas = MyMatrix1.SwapOnVSync(MyOffsetCanvas)
     MyOffsetCanvas.Clear()
