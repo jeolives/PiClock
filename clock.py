@@ -57,7 +57,7 @@ while(1):
     if currentDT.hour < 23:
         time.sleep(0.02)
         scrollColour = BLUE
-        fulldate = currentDT.strftime("%A, %d %b %Y")
+        fulldate = currentDT.strftime("%a, %d %b %Y")
         if currentDT.day < 10:
             fulldate = fulldate[1:]
     #else:
