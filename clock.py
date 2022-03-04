@@ -25,6 +25,7 @@ MyMatrix.rows = 64
 MyMatrix.cols = 128
 MyMatrix.chain_length = 1
 MyMatrix.hardware_mapping = 'regular'
+MyMatrix.gpio_slowdown = 2
 
 # Sets brightness level. Default: 100. Range: 1..100"
 MyMatrix.brightness = 75
@@ -57,7 +58,7 @@ while(1):
     if currentDT.hour < 23:
         time.sleep(0.02)
         scrollColour = BLUE
-        fulldate = currentDT.strftime("%a, %d %b %Y")
+        fulldate = currentDT.strftime(" %a"+" "+"%d %b %Y")
         if currentDT.day < 10:
             fulldate = fulldate[1:]
     #else:
