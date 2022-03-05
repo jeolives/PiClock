@@ -19,7 +19,7 @@ flip = True
 tick = True
 scroller = 128
 
-# init the RGB matrix as 32 Rows, 2 panels (represents 32 x 64 panel), 1 chain
+# init the RGB matrix as 64 Rows, 128 Cols, 1 chain
 MyMatrix = RGBMatrixOptions()
 MyMatrix.rows = 64
 MyMatrix.cols = 128
@@ -44,7 +44,6 @@ lastScrollTick = int(round(time.time() * 1000))
 
 fonts = {}
 
-loadFont('7x13B')
 loadFont('10x20')
 loadFont('8x13')
 
