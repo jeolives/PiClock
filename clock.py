@@ -25,7 +25,7 @@ MyMatrix.rows = 64
 MyMatrix.cols = 128
 MyMatrix.chain_length = 1
 MyMatrix.hardware_mapping = 'regular'
-MyMatrix.gpio_slowdown = 2
+MyMatrix.gpio_slowdown = 3
 
 # Sets brightness level. Default: 100. Range: 1..100"
 MyMatrix.brightness = 75
