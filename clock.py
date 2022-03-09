@@ -28,7 +28,7 @@ MyMatrix.hardware_mapping = 'regular'
 MyMatrix.gpio_slowdown = 2
 
 # Sets brightness level. Default: 100. Range: 1..100"
-MyMatrix.brightness = 50
+MyMatrix.brightness = 75
 
 # set colour
 ColorWHI = graphics.Color(255, 255, 255)
